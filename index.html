@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <title>NoteKu</title>
+  </head>
+  <body>
+    <div class="container-grid">
+      <nav-bar></nav-bar>
+      <template id="noNotesTemplate">
+        <div class="no-notes">
+          <p>Tidak ada catatan.</p>
+        </div>
+      </template>
+      <main id="displayNotesData"></main>
+
+      <aside class="justify-content">
+        <button class="btn" id="addNoteBtn">Add Note</button><br />
+        <div id="notes-data"></div>
+        <form-input></form-input>
+      </aside>
+    </div>
+
+    <div id="loadingIndicator" class="loading-indicator">Loading...</div>
+
+    <modal-pop></modal-pop>
+  </body>
+</html>
